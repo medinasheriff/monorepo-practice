@@ -1,0 +1,294 @@
+//making the directory//
+DELL@DESKTOP-0SUVIT4 MINGW64 ~
+$ mkdir monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~
+$ cd monorepo
+
+//cloning my github repo//
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ git clone https://github.com/medinasheriff/monorepo.git
+Cloning into 'monorepo'...
+warning: You appear to have cloned an empty repository.
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ pwd
+/c/Users/DELL/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ cd monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ touch README.md
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ touch LICENSE
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ touch .gitignore
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ git add .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ git commit -am "Initial commit"
+[main (root-commit) 3dffee8] Initial commit
+ 3 files changed, 43 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 LICENSE
+ create mode 100644 README.md
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ pwd
+/c/Users/DELL/monorepo/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ mkdir backend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ cd backend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ touch .gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ git add .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ git commit -am "add empty backend directory"
+[main 19ad9d9] add empty backend directory
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 backend/.gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ git commit origin main
+error: pathspec 'origin' did not match any file(s) known to git
+error: pathspec 'main' did not match any file(s) known to git
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.46 KiB | 746.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/medinasheriff/monorepo.git
+ * [new branch]      main -> main
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ pwd
+/c/Users/DELL/monorepo/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ git checkout -b frontend-layout
+Switched to a new branch 'frontend-layout'
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ pwd
+/c/Users/DELL/monorepo/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ mkdir frontend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ cd frontend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (frontend-layout)
+$ mkdir src
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (frontend-layout)
+$ cd src
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ mkdir components
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ cd components
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/components (frontend-layout)
+$ touch .gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/components (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ pwd
+/c/Users/DELL/monorepo/monorepo/frontend/src
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ mkdir containers
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ cd containers
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/containers (frontend-layout)
+$ touch .gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/containers (frontend-layout)
+$ git add .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/containers (frontend-layout)
+$ git commit -am "chore: add components and containers directory to frontend"
+[frontend-layout 0e8ad15] chore: add components and containers directory to frontend
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 frontend/src/containers/.gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/containers (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ pwd
+/c/Users/DELL/monorepo/monorepo/frontend/src
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ touch index.js
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ git add .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ git commit -am "add content dynamically to page via JavaScript"
+[frontend-layout 9af2958] add content dynamically to page via JavaScript
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 frontend/src/components/.gitkeep
+ create mode 100644 frontend/src/index.js
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ git push -u origin frontend-layout
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 741 bytes | 370.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'frontend-layout' on GitHub by visiting:
+remote:      https://github.com/medinasheriff/monorepo/pull/new/frontend-layout
+remote:
+To https://github.com/medinasheriff/monorepo.git
+ * [new branch]      frontend-layout -> frontend-layout
+branch 'frontend-layout' set up to track 'origin/frontend-layout'.
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        frontend/src/index.js
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ git merge frontend-layout
+Already up to date.
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (frontend-layout)
+$ pwd
+/c/Users/DELL/monorepo/monorepo/frontend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (frontend-layout)
+$ mkdir public
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (frontend-layout)
+$ cd public
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (frontend-layout)
+$ touch index.html
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (frontend-layout)
+$ git add .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (frontend-layout)
+$ git commit -am "add index.html page"
+[frontend-layout bf79ca2] add index.html page
+ 2 files changed, 4 insertions(+)
+ create mode 100644 frontend/public/index.html
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (frontend-layout)
+$
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (frontend-layout)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (frontend-layout)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ pwd
+/c/Users/DELL/monorepo/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ git branch commands
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ pwd
+/c/Users/DELL/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ cd monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ cd monorepo main
+bash: cd: too many arguments
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ cd main
+bash: cd: main: No such file or directory
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ git branch main commands
+fatal: a branch named 'main' already exists
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ gits branch commands main
+bash: gits: command not found
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ cd commands
+bash: cd: commands: No such file or directory
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ git checkout -b commands
+fatal: a branch named 'commands' already exists
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ touch git-commands.txt
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$
